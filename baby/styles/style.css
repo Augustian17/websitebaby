@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: #232e35;
+}
+
+p {
+    font-size: 1rem; /* 16 pixel */
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: #656d72 ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+/* Buttons */
+.btn {
+    padding: 1rem 1.5rem;
+    background: aliceblue;
+    border: 1.5px solid #f1f1f1;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+/* Titles */
+
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #232e35;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    color: #d9d9d9;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+/* Layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+/* Logo and Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: #232e35;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #232e35;
+
+}
+
+/* Burger */
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+}
+
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+
+}
+
+/* Hero Section */
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 1rem;
+}
+
+.hero-name span {
+    color: #7e74f1;
+}
+
+.hero-right img {
+    width: 80%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+/* Services Section */
+#services {
+    background-color: #fbfbfb;
+    padding: 6rem 0;
+}
+
+.services .pre-title {
+    margin: 0 auto;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.service {
+    pad: 3rem 2rem;
+    text-align: center;
+    background: #fff;
+    border-radius: .7rem;
+}
+
+.service h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.service-icon {
+    background: #f5f3fe;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: .5rem;
+}
+
+.service-icon svg {
+    fill: #7e74f1;
+}
+
+#portfolios {
+    padding: 6rem 0;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+}
+
+.portfolio {
+    border-radius: .7rem;
+}
+
+.portfolio-cover {
+    height: 250px;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 2rem 1.5rem;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portfolio h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.footer {
+    padding: 4rem 0;
+    background: #fbfbfb;
+    text-align: center;
+}
